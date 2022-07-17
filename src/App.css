@@ -1,0 +1,756 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(to bottom,rgb(0,0,0,0.2), rgb(0,0,0,0.45)), url(./assets/img/background-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 41px;
+  min-height: 100vh;
+  transition: 0.5s ease-out;
+  
+  box-sizing: border-box;
+  padding: 30px 0 35px 0;
+}
+
+.container {
+  width: 45%;
+  border-radius: 15px;
+  display: flex;
+  box-shadow: 0  0 20px rgba(255, 255, 255, 0.486);
+  position: relative;
+  max-width: 900px;
+}
+
+.card-position {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 28px auto;
+  color: rgba(255, 255, 255, 0.966);
+  text-shadow: 3px 3px  rgb(37, 37, 37);
+  z-index: 2;
+}
+
+h1 {
+  color: rgba(226, 226, 226, 0.877);
+  text-shadow: 4.5px 3px rgba(121, 122, 122, 0.829);
+  font-weight: 900;
+  font-size: 3.1rem;
+  z-index: 3;
+  margin-bottom: 10px;
+}
+
+
+.form_input {
+  background-color: rgb(180, 177, 177);
+  
+  width: 300px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: none;
+  border: transparent;
+  color: rgb(41, 40, 40);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.form_input:focus {
+  outline: none;
+}
+
+.form_input::placeholder {
+  color: rgb(80, 78, 78);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.form_btn {
+  background: rgb(39, 39, 39);
+  color: white;
+  padding: 0;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 0px;
+  border-radius: 0px 10px 10px 0px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.form_btn:active {
+  transform: translateY(-2px);
+  transition: 0.1s;
+}
+
+.form_btn:hover {
+  background: rgb(39, 39, 39);
+}
+
+
+.btn-location {
+  border: none;
+  position: absolute;
+  padding: 5px;
+  left: 0;
+  top: 0; 
+  border-radius: 15px 0 0 0;
+  cursor: pointer;
+  background: white;
+}
+
+.icon-location {
+  font-size: 18px;
+  color: black;
+}
+
+.btn-location:active {
+  transform: translateY(2px)
+  
+}
+
+
+.card-error_country {
+  width: 300px;
+  text-align: center;
+}
+
+.text-error_country {
+  color: rgb(177, 176, 176);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(121, 122, 122, 0.829);
+}
+
+h3 {
+  font-weight:  500 ;
+  margin: 3px auto;
+  font-size: 1.2rem;
+}
+
+.card-left {
+  width: 60%;
+  background: rgba(29, 29, 29, 0.973);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  border-radius: 0 20px 20px 0px ;
+  padding: 75px 0 40px 0;
+  gap: 20px;
+}
+
+.icon { 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon p {
+  margin-top: -10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.icon img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.card-right {
+  background-image: url(/src/assets/img/supp-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  gap: 100px;
+  border-radius: 20px 0 0 20px ;
+}
+
+i {
+  font-size: 20px;
+}
+
+.card-right_btn_change {
+ background-color: rgba(34, 33, 33, 0.507);
+ color:white;
+ margin-bottom: -110px;
+ padding: 7px 10px;
+ font-size: 16px;
+ font-weight: 700;
+ border-radius: 12px;
+ box-shadow: 1px 2px 5px rgba(214, 214, 214, 0.603);
+ border: none;
+ text-shadow: 1px 1px  rgb(43, 43, 43);
+ cursor: pointer;
+}
+
+.card-right_btn_change:hover {
+  background-color: rgba(193, 197, 201, 0.082);
+}
+
+.card-right span {
+  font-size: 2.3rem;
+  font-weight: 800;
+  background-color: rgba(255, 255, 255, 0.158);
+  padding: 22px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(248, 247, 247, 0.986);
+  text-shadow: 3.5px 3.5px  rgb(37, 37, 37);
+}
+
+
+p {
+  font-size: 20px;
+}
+
+
+
+
+/* @media */
+
+@media (max-width: 1508px) {
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.9rem;
+    margin-bottom: 5px;
+  }
+
+  .form_input {
+    width: 240px;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  .form_input::placeholder {
+    font-size: 13.5px;
+    font-weight: 500;
+  }
+
+  .form_btn {
+    font-size: 15px;
+    padding: 5px 11px;
+    font-weight: 500;
+  }
+  
+  .btn-location {
+    padding: 5px;
+  }
+
+  .icon-location {
+    font-size: 16px;
+  }
+
+  .card-error_country {
+    width: 240px;
+  }
+  
+  .text-error_country {
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+}
+/*
+@media (max-width: 1308px) {
+
+  h1 {
+    top: 70px
+  }
+  
+}*/
+
+@media (max-width: 1208px) {
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .container {
+    width: 50%;
+  }
+  
+  .card-position {
+    margin: 20px auto;
+  }
+  
+  
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  
+  h3 {
+    font-weight:  500 ;
+    margin: 2px auto;
+    font-size: 1.1rem;
+  }
+  
+  .card-left {
+    padding: 70px 0 40px 0;
+    gap: 13px;
+  }
+  
+  .icon p {
+    margin-top: -10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .icon img {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card-right {
+    gap: 90px;
+  }
+  
+  i {
+    font-size: 14px;
+  }
+  
+  .card-right_btn_change {
+  
+   margin-bottom: -100px;
+   padding: 7px 10px;
+   font-size: 15px;
+   font-weight: 700;
+   border-radius: 12px;
+   box-shadow: 1px 2px 5px rgba(214, 214, 214, 0.603);
+
+  }
+  
+  .card-right span {
+    font-size: 2.1rem;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.158);
+    padding: 19px 17px;
+  }
+  
+  
+  p {
+    font-size: 18px;
+  }
+
+
+  .form_input {
+    width: 240px;
+    padding: 4px 8px;
+  }
+  
+  .form_btn {
+    padding: 4px 9px;
+  }
+  
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 60%;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .card-right span {
+    font-size: 1.9rem;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.158);
+    padding: 18px 15px;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: 70%;
+    box-shadow: 0  0 15px rgba(255, 255, 255, 0.486);
+
+
+  }
+
+  .card-position {
+    margin: 20px auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+  
+  h3 {
+    margin: 2px auto;
+    font-size: 1rem;
+  }
+  
+  .card-left {
+    padding: 70px 0 40px 0;
+    gap: 12px;
+  }
+  
+  .icon p {
+    margin-top: -15px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  .icon img {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card-right {
+    gap: 85px;
+  }
+  
+  i {
+    font-size: 14px;
+  }
+
+  .card-right_btn_change {
+   margin-bottom: -95px;
+   padding: 6px 9px;
+   font-size: 13px;
+   border-radius: 13px;
+  }
+  
+  .card-right span {
+    font-size: 1.7rem;
+    font-weight: 800;
+    padding: 17px 15px;
+  }
+  
+  
+  p {
+    font-size: 16px;
+  }
+  
+
+  .form_input {
+    width: 225px;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .form_input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .form_btn {
+    font-size: 14px;
+    padding: 4px 8px;
+    font-weight: 400;
+  }
+  
+  .btn-location {
+    padding: 4.5px;
+  }
+
+  .icon-location {
+    font-size: 15px;
+  }
+
+
+  .card-error_country {
+    width: 225px;
+  }
+  
+  .text-error_country {
+    font-size: 15px;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+
+  .App{
+    gap: 35px;
+  }
+
+  .container {
+    width: 80%;
+    box-shadow: 0  0 10px rgba(255, 255, 255, 0.486);
+
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 2.2rem;
+    text-shadow: 0.65px 0.65px rgba(214, 214, 214, 0.603);
+  }
+
+
+  .card-position {
+    margin: 20px auto;
+  }
+  
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-shadow: 0.65px 0.65px rgba(214, 214, 214, 0.603);
+  }
+  
+  h3 {
+    margin: 2px auto;
+    font-size: 1rem;
+    text-shadow: none;
+  }
+  
+  .card-left {
+    padding: 70px 0 40px 0;
+    gap: 11px;
+  }
+
+  .icon p {
+    font-size: 1rem;
+    margin-bottom: 11px;
+  }
+  
+  .icon img {
+    width: 70%;
+  }
+  
+  .card-right {
+    gap: 75px;
+  }
+  
+  i {
+    font-size: 12px;
+  }
+  
+  .card-right_btn_change {
+   margin-bottom: -80px;
+   padding: 6px 9px;
+   font-size: 12px;
+   font-weight: 500;
+   border-radius: 13px;
+  }
+  
+  .card-right span {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 16px 14px;
+    text-shadow: 2.3px 2.3px  rgb(37, 37, 37);
+  }
+  
+  p {
+    font-size: 15px;
+  }
+
+
+
+  .form_input {
+    width: 205px;
+    padding: 3.5px 8px;
+    font-size: 13px;
+  }
+
+  .form_input::placeholder {
+    font-size: 11px;
+  }
+  
+  .form_btn {
+    font-size: 13px;
+    padding: 3.5px 7px;
+  }
+  
+  .btn-location {
+    padding: 4px;
+  }
+
+  .icon-location {
+    font-size: 13.5px;
+  }
+
+
+  .card-error_country {
+    width: 205px;
+  }
+  
+  .text-error_country {
+    font-size: 13.5px;
+  }
+
+
+  
+}
+
+@media (max-width: 460px) {
+
+  .App{
+    gap: 30px;
+  }
+
+  .container {
+    width: 80%;
+    box-shadow: 0  0 8px rgba(255, 255, 255, 0.486);
+
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    text-shadow: 0.4px 0.4px rgba(214, 214, 214, 0.603);
+    margin-bottom: 3px;
+  }
+
+
+  .card-position {
+    margin: 20px auto;
+  }
+  
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-shadow: 0.4px 0.4px rgba(214, 214, 214, 0.603);
+  }
+  
+  h3 {
+    margin: 2px auto;
+    font-size: 15px;
+    text-shadow: none;
+  }
+  
+  .card-left {
+    padding: 70px 0 40px 0;
+    gap: 11px;
+  }
+
+  .icon p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .icon img {
+    width: 70%;
+  }
+  
+  .card-right {
+    gap: 70px;
+  }
+  
+  i {
+    font-size: 9px;
+  }
+  
+  .card-right_btn_change {
+   margin-bottom: -80px;
+   padding: 4px 7px;
+   font-size: 10px;
+  }
+  
+  .card-right span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 12px 10px;
+    text-shadow: 1px 1px  rgb(37, 37, 37);
+  }
+  
+  p {
+    font-size: 11px;
+  }
+  
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container{
+    width: 85%;
+  }
+  i {
+    font-size: 8px;
+  }
+
+
+  .form_input {
+    width: 160px;
+    padding: 3px 5px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .form_input::placeholder {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  
+  .form_btn {
+    font-size: 12px;
+    padding: 3px 6px;
+    font-weight: 400;
+  }
+  
+  .btn-location {
+    padding: 4px;
+  }
+
+  .icon-location {
+    font-size: 13.5px;
+  }
+
+
+  .card-error_country {
+    width: 160px;
+  }
+  
+  .text-error_country {
+    font-size: 11px;
+  }
+
+
+}

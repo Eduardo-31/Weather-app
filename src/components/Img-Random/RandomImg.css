@@ -1,0 +1,108 @@
+
+/*------------- class Random BG -------------- */
+
+.random1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('./RandomImg/bg-img1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.random2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('./RandomImg/bg-img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('./RandomImg/bg-img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url('./RandomImg/bg-img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./RandomImg/bg-img5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./RandomImg/bg-img6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random7 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('./RandomImg/bg-img7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random8 {
+    background: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.5)), url('./RandomImg/bg-img8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.random9 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url('./RandomImg/bg-img9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random10 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./RandomImg/bg-img10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random11 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('./RandomImg/bg-img11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random12 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./RandomImg/bg-img12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random13 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('./RandomImg/bg-img13.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random14 {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.2)), url('./RandomImg/bg-img14.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random15 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('./RandomImg/bg-img15.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random16 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.25)), url('./RandomImg/bg-img16.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random17 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('./RandomImg/bg-img17.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random18 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('./RandomImg/bg-img18.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random19 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./RandomImg/bg-img19.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random20 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.35)), url('./RandomImg/bg-img20.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.random21 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5)), url('./RandomImg/bg-img21.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
